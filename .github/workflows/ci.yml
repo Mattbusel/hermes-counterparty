@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  tests:
+    name: pytest (Python ${{ matrix.python }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.11", "3.12", "3.14"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install test tooling (release-age quarantine of 3 days, catalog rule 10)
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install uv
+          python -m uv pip install --system --exclude-newer "$(date -u -d '3 days ago' +%Y-%m-%dT%H:%M:%SZ)" pytest pyyaml
+      - name: Unit tests (offline, canned API)
+        run: python -m pytest tests -q
+      - name: Live tests (real Tensorust API, three known entities)
+        run: python -m pytest tests -q -m live -o addopts=""
+        continue-on-error: true
+
+  validate:
+    name: hermes plugins validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: plugin
+      - name: Validate with Hermes main
+        uses: NousResearch/hermes-agent/.github/actions/plugin-validate@main
+        with:
+          path: plugin
+          hermes-ref: main

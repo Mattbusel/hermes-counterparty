@@ -1,0 +1,394 @@
+{
+ "generated_at": "2026-11-09T23:03:40Z",
+ "source": "https://shop.tensorust.com/api/mcp",
+ "lists": {
+  "1260H": {
+   "name": "DoD Chinese Military Companies list (Section 1260H)",
+   "operator": "Department of Defense, OUSD(A&S)",
+   "cadence": "annual (statute: until Dec 31 2030), plus ad hoc additions and removals",
+   "source": "Federal Register API (agency defense-department, \"Chinese military companies\")",
+   "entities": 77,
+   "fetched_at": "2026-11-06T08:55:24Z",
+   "latest_entry": "2026-06-10",
+   "vendors": [
+    {
+     "id": "autel",
+     "name": "Autel Robotics (drones)",
+     "entity": "Autel Intelligent Technology Corp., Ltd. (Autel Technology)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2025-01-07",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "bgi",
+     "name": "BGI Group (BGI Genomics, BGI Americas, Innomics, STomics)",
+     "entity": "BGI Group (and BGI Group subsidiaries: BGI Americas Corporation, BGI Genomics Co., Ltd. (BGI), Complete Genomics, Inc., Forensic Genomics International (FGI), GBI Diagnostics, Inc., Innomics, Inc., and STomics Americas, Ltd.)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2024-04-02",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "china_telecom_carriers",
+     "name": "China Mobile / China Telecom / China Unicom",
+     "entity": "China Mobile Communications Group Co., Ltd. (China Mobile Comm) (and China Mobile Comm subsidiaries: Aspire Technologies (Shenzhen) Limited, China Mobile Hong Kong (BVI) Limited, China Mobile Limited (China Mobile))",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-06-28",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "dahua",
+     "name": "Dahua (video surveillance)",
+     "entity": "Zhejiang Dahua Technology Co., Ltd. (Dahua) (and Dahua subsidiary: Chengdu Dahua Wisdom Information Technology Co., Ltd.)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2024-04-02",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "dji",
+     "name": "DJI (drones)",
+     "entity": "Shenzhen DJI Technology Co., Ltd. (DJI) (and DJI subsidiary: Shenzhen Dajiang Baiwang Technology Co., Ltd.)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2024-04-02",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "hesai",
+     "name": "Hesai (lidar)",
+     "entity": "Hesai Group (also known as Hesai Technology Co., Ltd.)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2024-04-02",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "hikvision",
+     "name": "Hikvision (video surveillance)",
+     "entity": "Hangzhou Hikvision Digital Technology Co., Ltd. (Hikvision)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-06-28",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "huawei",
+     "name": "Huawei",
+     "entity": "Huawei Investment & Holding Co., Ltd. (Huawei Holding) (and Huawei Holding subsidiary: Huawei Technologies Co., Ltd. (Huawei))",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-06-28",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "mgi",
+     "name": "MGI Tech / Complete Genomics (DNBSEQ, BGISEQ, MGISEQ sequencers)",
+     "entity": "BGI Group (and BGI Group subsidiaries: BGI Americas Corporation, BGI Genomics Co., Ltd. (BGI), Complete Genomics, Inc., Forensic Genomics International (FGI), GBI Diagnostics, Inc., Innomics, Inc., and STomics Americas, Ltd.)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2025-01-07",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "novogene",
+     "name": "Novogene",
+     "entity": "Novogene Company Limited (Novogene)",
+     "status": "contested",
+     "status_note": "Novogene calls its listing erroneous and is seeking removal.",
+     "first_listed": "2026-06-10",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "quectel",
+     "name": "Quectel (cellular modules)",
+     "entity": "Quectel Wireless Solutions Co., Ltd. (Quectel)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2025-01-07",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "robosense",
+     "name": "RoboSense (lidar)",
+     "entity": "RoboSense Technology Co., Ltd.",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2026-06-10",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "tp_link",
+     "name": "TP-Link (routers, network gear)",
+     "entity": "TP-Link Technologies Co., Ltd. (TP-Link)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2026-06-10",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "unitree",
+     "name": "Unitree (robots)",
+     "entity": "Hangzhou Yushu Technology Co., Ltd. (Unitree)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2026-06-10",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "wuxi_apptec",
+     "name": "WuXi AppTec",
+     "entity": "WuXi AppTec Co., Ltd. (WuXi AppTec)",
+     "status": "enjoined",
+     "status_note": "WuXi AppTec's 1260H designation is preliminarily enjoined (D.D.C., Aug 7 2026); it still appears in the Federal Register list.",
+     "first_listed": "2026-06-10",
+     "effective": "2026-06-10"
+    }
+   ]
+  },
+  "FCC_COVERED": {
+   "name": "FCC Covered List (Secure and Trusted Communications Networks Act)",
+   "operator": "Federal Communications Commission, Public Safety and Homeland Security Bureau",
+   "cadence": "updated whenever a national security agency makes a determination (11 entries since 2022)",
+   "source": "fcc.gov/supplychain/coveredlist",
+   "entities": 16,
+   "fetched_at": "2026-11-06T08:55:24Z",
+   "latest_entry": "2026-07-28",
+   "vendors": [
+    {
+     "id": "autel",
+     "name": "Autel Robotics (drones)",
+     "entity": "Uncrewed aircraft systems (UAS) and UAS critical components produced in a foreign country†† —except: (a) UAS and UAS critical components included on the Defense Contract Management Agency’s (DCMA’s) Blue UAS Cleared List, until January 1, 2028, # (b) UAS and UAS critical components that qualify as “",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2025-12-22",
+     "effective": "2025-12-22"
+    },
+    {
+     "id": "china_telecom_carriers",
+     "name": "China Mobile / China Telecom / China Unicom",
+     "entity": "International telecommunications services provided by China Unicom (Americas) Operations Limited subject to section 214 of the Communications Act of 1934.",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2022-03-25",
+     "effective": "2022-03-25"
+    },
+    {
+     "id": "dahua",
+     "name": "Dahua (video surveillance)",
+     "entity": "Video surveillance and telecommunications equipment produced by Dahua Technology Company , to the extent it is used for the purpose of public safety, security of government facilities, physical security surveillance of critical infrastructure, and other national security purposes, including telecomm",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-03-12",
+     "effective": "2021-03-12"
+    },
+    {
+     "id": "dji",
+     "name": "DJI (drones)",
+     "entity": "Uncrewed aircraft systems (UAS) and UAS critical components produced in a foreign country†† —except: (a) UAS and UAS critical components included on the Defense Contract Management Agency’s (DCMA’s) Blue UAS Cleared List, until January 1, 2028, # (b) UAS and UAS critical components that qualify as “",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2025-12-22",
+     "effective": "2025-12-22"
+    },
+    {
+     "id": "hikvision",
+     "name": "Hikvision (video surveillance)",
+     "entity": "Video surveillance and telecommunications equipment produced by Hangzhou Hikvision Digital Technology Company , to the extent it is used for the purpose of public safety, security of government facilities, physical security surveillance of critical infrastructure, and other national security purpose",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-03-12",
+     "effective": "2021-03-12"
+    },
+    {
+     "id": "huawei",
+     "name": "Huawei",
+     "entity": "Telecommunications equipment produced by Huawei Technologies Company , including telecommunications or video surveillance services provided by such entity or using such equipment.",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-03-12",
+     "effective": "2021-03-12"
+    },
+    {
+     "id": "hytera",
+     "name": "Hytera (radios)",
+     "entity": "Video surveillance and telecommunications equipment produced by Hytera Communications Corporation , to the extent it is used for the purpose of public safety, security of government facilities, physical security surveillance of critical infrastructure, and other national security purposes, including",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-03-12",
+     "effective": "2021-03-12"
+    },
+    {
+     "id": "kaspersky",
+     "name": "Kaspersky (security software)",
+     "entity": "Cybersecurity and anti-virus software produced or provided by Kaspersky Lab, Inc. or any of its successors and assignees.",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2022-03-25",
+     "effective": "2022-03-25"
+    },
+    {
+     "id": "tp_link",
+     "name": "TP-Link (routers, network gear)",
+     "entity": "Routers ^ produced in a foreign country, except routers which have been granted a Conditional Approval by DoW or DHS .",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2026-03-23",
+     "effective": "2026-03-23"
+    },
+    {
+     "id": "unitree",
+     "name": "Unitree (robots)",
+     "entity": "Foreign-produced advanced robotic devices , ³ except advanced robotic devices which have been granted a Conditional Approval by DoW .",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2026-07-28",
+     "effective": "2026-07-28"
+    },
+    {
+     "id": "zte",
+     "name": "ZTE",
+     "entity": "Telecommunications equipment produced by ZTE Corporation , including telecommunications or video surveillance services provided by such entity or using such equipment.",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2021-03-12",
+     "effective": "2021-03-12"
+    }
+   ]
+  },
+  "SEC889": {
+   "name": "Section 889 covered telecom and video surveillance (FAR 52.204-25, 2 CFR 200.216)",
+   "operator": "GSA/DoD/NASA (FAR Council); OMB for grants (2 CFR 200.216)",
+   "cadence": "statutory names; changes only by statute or a DoD designation",
+   "source": "eCFR API, 48 CFR 52.204-25",
+   "entities": 5,
+   "fetched_at": "2026-11-06T08:55:24Z",
+   "latest_entry": "2019-08-13",
+   "vendors": [
+    {
+     "id": "dahua",
+     "name": "Dahua (video surveillance)",
+     "entity": "Dahua Technology Company (and any subsidiary or affiliate)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2019-08-13",
+     "effective": "2019-08-13"
+    },
+    {
+     "id": "hikvision",
+     "name": "Hikvision (video surveillance)",
+     "entity": "Hangzhou Hikvision Digital Technology Company (and any subsidiary or affiliate)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2019-08-13",
+     "effective": "2019-08-13"
+    },
+    {
+     "id": "huawei",
+     "name": "Huawei",
+     "entity": "Huawei Technologies Company (and any subsidiary or affiliate)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2019-08-13",
+     "effective": "2019-08-13"
+    },
+    {
+     "id": "hytera",
+     "name": "Hytera (radios)",
+     "entity": "Hytera Communications Corporation (and any subsidiary or affiliate)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2019-08-13",
+     "effective": "2019-08-13"
+    },
+    {
+     "id": "zte",
+     "name": "ZTE",
+     "entity": "ZTE Corporation (and any subsidiary or affiliate)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2019-08-13",
+     "effective": "2019-08-13"
+    }
+   ]
+  },
+  "UFLPA": {
+   "name": "UFLPA Entity List (forced labor import ban)",
+   "operator": "DHS Forced Labor Enforcement Task Force (FLETF)",
+   "cadence": "rolling additions in the Federal Register",
+   "source": "dhs.gov/uflpa-entity-list",
+   "entities": 196,
+   "fetched_at": "2026-11-06T08:55:24Z",
+   "latest_entry": "2026-10-29",
+   "vendors": [
+    {
+     "id": "bgi",
+     "name": "BGI Group (BGI Genomics, BGI Americas, Innomics, STomics)",
+     "entity": "BGI Genomics Co., Ltd. (also known as BGI Genomics)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2026-10-29",
+     "effective": "2026-10-29"
+    },
+    {
+     "id": "mgi",
+     "name": "MGI Tech / Complete Genomics (DNBSEQ, BGISEQ, MGISEQ sequencers)",
+     "entity": "MGI Tech Co., Ltd. (also known as MGI)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2026-10-29",
+     "effective": "2026-10-29"
+    }
+   ]
+  },
+  "BIOSECURE": {
+   "name": "BIOSECURE biotechnology companies of concern (FY2026 NDAA sec. 851)",
+   "operator": "OMB (list due Dec 18 2026), with DoD 1260H biotech listings",
+   "cadence": "OMB list annually from Dec 2026; 1260H biotech entities count automatically",
+   "source": "derived from 1260H + Federal Register watch for the OMB list",
+   "entities": 4,
+   "fetched_at": "2026-11-06T08:55:24Z",
+   "latest_entry": "2026-06-10",
+   "vendors": [
+    {
+     "id": "bgi",
+     "name": "BGI Group (BGI Genomics, BGI Americas, Innomics, STomics)",
+     "entity": "BGI Group (and BGI Group subsidiaries: BGI Americas Corporation, BGI Genomics Co., Ltd. (BGI), Complete Genomics, Inc., Forensic Genomics International (FGI), GBI Diagnostics, Inc., Innomics, Inc., and STomics Americas, Ltd.)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2024-04-02",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "mgi",
+     "name": "MGI Tech / Complete Genomics (DNBSEQ, BGISEQ, MGISEQ sequencers)",
+     "entity": "BGI Group (and BGI Group subsidiaries: BGI Americas Corporation, BGI Genomics Co., Ltd. (BGI), Complete Genomics, Inc., Forensic Genomics International (FGI), GBI Diagnostics, Inc., Innomics, Inc., and STomics Americas, Ltd.)",
+     "status": "listed",
+     "status_note": "",
+     "first_listed": "2025-01-07",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "novogene",
+     "name": "Novogene",
+     "entity": "Novogene Company Limited (Novogene)",
+     "status": "contested",
+     "status_note": "Novogene calls its listing erroneous and is seeking removal.",
+     "first_listed": "2026-06-10",
+     "effective": "2026-06-10"
+    },
+    {
+     "id": "wuxi_apptec",
+     "name": "WuXi AppTec",
+     "entity": "WuXi AppTec Co., Ltd. (WuXi AppTec)",
+     "status": "enjoined",
+     "status_note": "WuXi AppTec's 1260H designation is preliminarily enjoined (D.D.C., Aug 7 2026); it still appears in the Federal Register list.",
+     "first_listed": "2026-06-10",
+     "effective": "2026-06-10"
+    }
+   ]
+  }
+ }
+}

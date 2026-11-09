@@ -1,0 +1,58 @@
+name: counterparty
+version: "0.1.0"
+description: "Screens the companies your agent is about to pay, email, sign with or buy from. Before any outward action, a pre_tool_call hook checks the vendor, email domain or URL against the DoD Section 1260H list, the FCC Covered List, Section 889, the UFLPA Entity List, the BIOSECURE list and OFAC sanctions, with the ownership chain from public records, and raises Hermes's own approval prompt with the finding and its legal citation. Search and page results that mention a listed vendor get a one-time note. Tools cp_screen, cp_lookup, cp_credit, cp_who_owns_address and cp_brief give cited answers on demand; /whoowns gives a one-page brief. Network: HTTPS to shop.tensorust.com only. No key needed for the free tier."
+author: "Matthew Busel (Tensorust LLC)"
+license: MIT
+homepage: https://github.com/mattbusel/hermes-counterparty
+manifest_version: 2
+api_version: 1
+requires_hermes: ">=0.23.0"
+tags: [compliance, due-diligence, procurement, sanctions, public-records, guardrail]
+
+provides_tools:
+  - cp_screen
+  - cp_lookup
+  - cp_credit
+  - cp_who_owns_address
+  - cp_brief
+provides_hooks:
+  - pre_tool_call
+  - transform_tool_result
+
+config_schema:
+  mode:
+    type: str
+    choices: [ask, block, warn, "off"]
+    default: ask
+    label: "Gate mode"
+    description: "What happens when an outward action names a listed counterparty. ask raises Hermes's approval prompt (fails closed under cron and other unattended runs); block refuses the call; warn lets it through and appends the finding to the tool result; off disables the hooks but keeps the tools."
+  action_tools:
+    type: list
+    default: ["send_email", "*send_mail*", "*_send", "*_send_*", "*_reply", "*email*", "*_pay", "*_pay_*", "*payment*", "*checkout*", "*purchase*", "*order*", "*invoice*", "*wire*", "*transfer*", "*_sign", "*sign_*", "*contract*", "*submit*", "*subscribe*", "*onboard*", "*vendor*", "*supplier*", "*procure*"]
+    label: "Outward action tools"
+    description: "Tool names (fnmatch patterns) the gate watches. A call is screened only when a company, email domain or URL can be read from its arguments."
+  watch_tools:
+    type: list
+    default: ["web_search", "web_extract", "x_search", "browser_*", "read_file", "*fetch*", "*scrape*"]
+    label: "Result-watch tools"
+    description: "Tool names (fnmatch patterns) whose results are scanned for listed vendor names. A vendor is noted once per session."
+  lists:
+    type: list
+    default: ["1260H", "FCC_COVERED", "SEC889", "UFLPA", "BIOSECURE", "OFAC"]
+    label: "Lists to screen"
+    description: "Any of 1260H, FCC_COVERED, SEC889, UFLPA, BIOSECURE, OFAC."
+  timeout_seconds:
+    type: int
+    default: 6
+    label: "API timeout (seconds)"
+    description: "Per-request timeout for the Tensorust API. When it does not answer, the hook falls back to the bundled list snapshot and says so; it never blocks on a timeout alone."
+  refresh_lists:
+    type: bool
+    default: true
+    label: "Refresh list membership"
+    description: "Pull the current list membership from the Tensorust API once per day (data only, in memory). Off means the bundled snapshot is used as shipped."
+  tensorust_api_key:
+    type: secret
+    env: TENSORUST_API_KEY
+    label: "Tensorust API key (optional)"
+    description: "Unlocks full rows (every linked record, every lender mark) instead of free previews. Read only through Hermes's secret scope. Everything in this plugin works without it."
