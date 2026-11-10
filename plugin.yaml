@@ -1,5 +1,5 @@
 name: counterparty
-version: "0.1.0"
+version: "0.1.1"
 description: "Screens the companies your agent is about to pay, email, sign with or buy from. Before any outward action, a pre_tool_call hook checks the vendor, email domain or URL against the DoD Section 1260H list, the FCC Covered List, Section 889, the UFLPA Entity List, the BIOSECURE list and OFAC sanctions, with the ownership chain from public records, and raises Hermes's own approval prompt with the finding and its legal citation. Search and page results that mention a listed vendor get a one-time note. Tools cp_screen, cp_lookup, cp_credit, cp_who_owns_address and cp_brief give cited answers on demand; /whoowns gives a one-page brief. Network: HTTPS to shop.tensorust.com only. No key needed for the free tier."
 author: "Matthew Busel (Tensorust LLC)"
 license: MIT

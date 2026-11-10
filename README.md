@@ -10,6 +10,12 @@ Agents send purchase orders, pay invoices, place orders and sign things. None of
 hermes plugins install counterparty
 ```
 
+Until the catalog entry is merged, install from the repository at the reviewed tag:
+
+```
+hermes plugins install Mattbusel/hermes-counterparty --ref v0.1.1
+```
+
 Works out of the box. No account, no key. Python standard library only.
 
 ## What it does
@@ -93,7 +99,7 @@ plugins:
 - **Bounded time.** The two API calls per name run in parallel under one budget (timeout + 2 s). Names per call are capped at three; free-text scanning is local and instant.
 - **Never wedges the agent.** If the plugin itself errors, it logs and steps aside. Hermes's own approval gates are untouched either way.
 - **One prompt per vendor.** The approve directive carries a `rule_key` per tool and vendor set, so the user's `[a]lways` applies to that vendor, not to every email.
-- **Tests.** `pytest` runs 40 offline tests with a canned API (extraction, alias matching, the decision table for every mode, offline fallback, settings validation, manifest sync) and 3 live tests against the real API (a listed vendor, a clean public company, an FCC licensee with a parent). CI runs them on Python 3.11, 3.12 and 3.14 and runs `hermes plugins validate` against Hermes main.
+- **Tests.** `pytest` runs 50 offline tests with a canned API (extraction, alias matching, the decision table for every mode, offline fallback, settings validation, manifest sync) and 3 live tests against the real API (a listed vendor, a clean public company, an FCC licensee with a parent). CI runs them on Python 3.11, 3.12 and 3.14 and runs `hermes plugins validate` against Hermes main.
 
 ## Disclosure
 
@@ -115,6 +121,6 @@ hermes plugins validate .   # with a Hermes checkout on PATH
 hermes plugins install /path/to/hermes-counterparty   # local install
 ```
 
-AI tool disclosure: this plugin was written by Matthew Busel with Claude Code as a coding assistant. The design, the data source, the list research and the tests were directed and reviewed by the author.
+AI tool disclosure: the code, tests and documentation in this repository were produced with Claude Code (Anthropic's coding agent) working under the direction of Matthew Busel, who chose the problem, the design and the data source (the Tensorust public-records ontology, which he built), and who reviewed and is responsible for the submission. Nothing here is copied from another plugin.
 
 MIT License.
