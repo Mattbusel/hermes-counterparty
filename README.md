@@ -10,10 +10,11 @@ Agents send purchase orders, pay invoices, place orders and sign things. None of
 hermes plugins install counterparty
 ```
 
-Until the catalog entry is merged, install from the repository at the reviewed tag:
+Until the catalog entry is merged, install from a clone (or from the repository with `--ref <the full commit SHA pinned in the catalog PR>`):
 
 ```
-hermes plugins install Mattbusel/hermes-counterparty --ref v0.1.1
+git clone https://github.com/Mattbusel/hermes-counterparty
+hermes plugins install ./hermes-counterparty
 ```
 
 Works out of the box. No account, no key. Python standard library only.
